@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  body,
+  html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body,
+  p {
+    color: #6b747b;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+}
+
+/* Swiper navigation arrow overrides */
+.client-swiper .swiper-button-prev,
+.client-swiper .swiper-button-next {
+  color: #707375;
+  width: 22px;
+  height: 34px;
+}
+
+.client-swiper .swiper-button-prev::after,
+.client-swiper .swiper-button-next::after {
+  font-size: 18px;
+}
+
+.client-swiper .swiper-button-prev {
+  left: -16px;
+}
+
+.client-swiper .swiper-button-next {
+  right: -16px;
+}
