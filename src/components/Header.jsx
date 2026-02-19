@@ -24,16 +24,19 @@ export default function Header() {
         <div className="flex flex-col lg:flex-row lg:justify-center gap-8 lg:gap-4 xl:gap-[4.375rem]">
           <ExpertiseCard
             icon="/images/service-icon-3.svg"
+            iconAlt="Classroom trainings icon"
             title={<>CLASSROOM<br />TRAININGS</>}
             description="Instructor-led trainings (ILT) have been around since the beginning of the training function and considered one of the most popular mediums of training. It is an effective means of delivering information, as it allows for real-time feedback, questions and answers"
           />
           <ExpertiseCard
             icon="/images/header-expertise-icon-1.svg"
+            iconAlt="Virtual trainings icon"
             title={<>VIRTUAL<br />TRAININGS</>}
             description="Virtual classroom courses are Instructor-led-web-based training programs. These courses are designed for private groups and run at a time convenient to you by experienced instructors."
           />
           <ExpertiseCard
             icon="/images/service-icon-5.svg"
+            iconAlt="Onsite trainings icon"
             title={<>ONSITE<br />TRAININGS</>}
             description="On-site training is one of the most cost-effective ways to facilitate your organization's learning and development goals. We want to learn about your business challenges and work with you to understand your needs."
           />
@@ -43,12 +46,12 @@ export default function Header() {
   );
 }
 
-function ExpertiseCard({ icon, title, description }) {
+function ExpertiseCard({ icon, iconAlt, title, description }) {
   return (
     <div className="lg:w-[320px] mb-8 lg:mb-0">
       <div className="flex items-start mb-2 lg:mb-4">
         <div className="w-[50px] lg:w-[62px] mr-4 lg:mr-[1.125rem] shrink-0">
-          <img src={icon} alt="" />
+          <img src={icon} alt={iconAlt} />
         </div>
         <h5 className="text-[#333] font-bold text-[1.25rem] leading-[1.625rem] mt-0 lg:mt-1">
           {title}

@@ -13,10 +13,10 @@ const clients = [
 
 export default function Clients() {
   return (
-    <div className="bg-[#f7f9fa] py-8">
+    <section aria-label="Our clients" className="bg-[#f7f9fa] py-8">
       <div className="max-w-[1140px] mx-auto px-4">
         <div className="text-center mb-3">
-          <div className="text-[#129dd8] font-bold text-[0.8125rem] leading-[1.125rem]">OUR CLIENTS</div>
+          <h2 className="text-[#129dd8] font-bold text-[0.8125rem] leading-[1.125rem]">OUR CLIENTS</h2>
         </div>
 
         <div className="relative">
@@ -37,8 +37,9 @@ export default function Clients() {
                 <div className="text-center">
                   <img
                     src={src}
-                    alt="Client"
+                    alt={`Client logo ${idx + 1}`}
                     className="h-20 w-auto mx-auto mb-5"
+                    loading="lazy"
                   />
                 </div>
               </SwiperSlide>
@@ -46,6 +47,6 @@ export default function Clients() {
           </Swiper>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

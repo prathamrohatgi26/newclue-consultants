@@ -62,7 +62,7 @@ function StatCell({ count, label }) {
 
 export default function Statistics() {
   return (
-    <div className="pt-8 lg:pt-16 pb-[4.5rem] text-center">
+    <section aria-label="Company statistics" className="pt-8 lg:pt-16 pb-[4.5rem] text-center">
       <div className="max-w-[1140px] mx-auto px-4">
         <div className="mb-3">
           {stats.map((stat) => (
@@ -70,6 +70,6 @@ export default function Statistics() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

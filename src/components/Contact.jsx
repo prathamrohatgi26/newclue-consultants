@@ -2,8 +2,9 @@ import { FaCircle, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
 
 export default function Contact() {
   return (
-    <div
+    <section
       id="contact"
+      aria-label="Contact details"
       className="pt-[8.25rem] pb-[4.5rem] text-center bg-cover bg-center"
       style={{
         backgroundImage:
@@ -39,10 +40,10 @@ export default function Contact() {
               <FaCircle className="text-[#cacfdf] text-[2.75rem]" />
               <FaPhoneAlt className="absolute text-[#3f424b] text-base" />
             </span>
-            <span className="text-[#129dd8] font-bold">+91 8920825768</span>
+            <a href="tel:+918920825768" className="text-[#129dd8] no-underline font-bold">+91 8920825768</a>
           </span>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -9,8 +9,7 @@ const socialIcons = [
 
 export default function Footer() {
   return (
-    <>
-      {/* Footer */}
+    <footer>
       <div className="bg-[#3f424b] pt-[5.5rem] pb-6">
         <div className="max-w-[1140px] mx-auto px-4">
           <div className="flex flex-col lg:flex-row lg:justify-between">
@@ -59,6 +58,6 @@ export default function Footer() {
           Copyright © <a href="#" className="text-[#cacfdf] no-underline">New Clue Consultants</a>
         </p>
       </div>
-    </>
+    </footer>
   );
 }

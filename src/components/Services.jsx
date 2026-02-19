@@ -3,7 +3,7 @@ import pastCourses from '../data/courses';
 
 export default function Services() {
   return (
-    <div id="services" className="relative bg-[#3f424b] pt-36 pb-14 lg:pb-28">
+    <section id="services" aria-label="Trainings conducted" className="relative bg-[#3f424b] pt-36 pb-14 lg:pb-28">
       <div className="max-w-[1140px] mx-auto px-4">
         {/* Heading */}
         <h2 className="text-white font-bold text-[2rem] leading-[2.5rem] tracking-tight text-center mb-[3.75rem] max-w-[35.25rem] mx-auto">
@@ -74,6 +74,6 @@ export default function Services() {
           d="M0,0C282.74,67.647,704.207,110.567,1174.97,110.567S2067.2,67.647,2349.939,0H0Z"
         />
       </svg>
-    </div>
+    </section>
   );
 }

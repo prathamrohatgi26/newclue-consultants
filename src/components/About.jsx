@@ -2,8 +2,9 @@ import { FaSquare } from 'react-icons/fa';
 
 export default function About() {
   return (
-    <div
+    <section
       id="about"
+      aria-label="About us"
       className="py-24 lg:py-36 bg-cover bg-center"
       style={{
         backgroundImage: "url('/images/about-background.jpg')",
@@ -22,7 +23,7 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Image */}
           <div>
-            <img src="/images/about.jpg" alt="About New Clue" className="w-full rounded" />
+            <img src="/images/about.jpg" alt="About New Clue Consultants" className="w-full rounded" width="332" height="325" loading="lazy" />
           </div>
 
           {/* Differentiators */}
@@ -61,6 +62,6 @@ export default function About() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
